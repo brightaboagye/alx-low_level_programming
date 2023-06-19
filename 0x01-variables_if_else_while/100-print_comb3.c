@@ -10,12 +10,11 @@
  */
 int main(void)
 {
-	int n;
-	int m;
-	
+	int n, m;
+
 	for (n = 0; n < 10; n++)
 	{
-		for (m = n + 1; m < 10; m++)
+		for (m = n + 1, m < 10; m++)
 		{
 			putchar(n + '0');
 			putchar(m + '0');
@@ -27,6 +26,6 @@ int main(void)
 			}
 		}
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0)
 }
