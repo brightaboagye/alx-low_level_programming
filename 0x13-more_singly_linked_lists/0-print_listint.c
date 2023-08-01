@@ -1,20 +1,20 @@
 #include "lists.h"
 
 /**
- * listint_len - a function that prints the length of alist.
+ * print_listint - a function that prints all the elements of a listint_t list.
  *
  * @h: pointer to node.
  *
  * Return: The number of elements in the linked list
  */
 
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
 	unsigned int count = 0;
 
 	while (h != NULL)
 	{
-
+		printf("%d\n", h->n);
 		h = h->next;
 		count++;
 
